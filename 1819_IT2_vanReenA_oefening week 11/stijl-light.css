@@ -1,0 +1,17 @@
+body {
+	background-color: white;
+}
+
+h1, p {
+	color: #363534;
+}
+
+nav a:nth-child(2) {
+	background-color: #f2542d;
+	color: white;
+}
+
+nav a:nth-child(1) {
+	background-color: white;
+	color: #363534;
+}

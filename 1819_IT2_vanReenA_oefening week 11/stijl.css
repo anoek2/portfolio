@@ -1,0 +1,263 @@
+body {
+	background-color: #d8cdc4;
+	padding: 3rem;
+	font-family: avenir;
+}
+h1 {
+	font-size: 8rem;
+	line-height: 8rem;
+	color: #00a4a6;
+	font-weight: lighter;
+	margin-left: 100vw;
+	text-align: center;
+	margin: 1rem auto;
+	width: 90vw;
+}
+a {
+	color: white;
+	line-height: 3rem;
+}
+
+
+div a {
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	margin-right: 3rem;
+	padding: .3rem;
+}
+
+div nav a:nth-child(1) {
+	background-color: #f2542d;
+	color: white;
+}
+
+.menu {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+}
+
+.menu img {
+	height: 5rem;
+}
+
+nav {
+	background-color: #bededb;
+	width: 22vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 2rem;
+	background-attachment: fixed;
+}
+
+nav.onzichtbaar {
+	display: none;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 2.25rem;
+	margin-bottom: 3rem;
+}
+
+.anouk {
+	width: 25rem;
+	position: absolute;
+	right: 25vw;
+	top: 45vh;
+	border: 1rem solid white;
+	filter: contrast(150%);
+}
+.vierkant{
+	width: 250px;
+	height: 250px;
+	background: #d8cdc4;
+	border: 0.5rem solid white;
+	margin: 15rem auto;
+	animation-name: animatievierkant;
+	animation-duration: 2s;
+}
+.think {
+	position: relative;
+	bottom: 51vh;
+	text-align: center;
+	animation-name: animatiethink;
+	animation-duration: 1s;
+	animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+.outside {
+	position: relative;
+	bottom: 52vh;
+	text-align: center;
+	animation-name: animatieoutside;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: backwards;
+}
+.the {
+	position: relative;
+	bottom: 53vh;
+	text-align: center;
+	animation-name: animatiethe;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: backwards;
+}
+.box {
+	position: relative;
+	bottom: 52vh;
+	text-align: center;
+	animation-name: animatiebox;
+	animation-duration: 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: backwards;
+}
+
+p {
+	color: white;
+	margin: auto;
+	font-size: 4rem;
+}
+
+.about p {
+	color: #bededb;
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 4rem;
+	position: relative;
+	top: 5rem;
+	left: 5rem;
+}
+
+.main img {
+	position: relative;
+	top: 5rem;
+	left: 3rem;
+	border: 1rem solid white;
+	width: 30vw;
+	margin: 2rem;
+	filter: sepia(50%);
+}
+
+#ik {
+	width: 20rem;
+	position: absolute;
+	right: 25vw;
+	top: 51vh;
+	border: 1rem solid white;
+	filter: contrast(150%);
+}
+.contact p {
+	color: #bededb;
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 4rem;
+	position: relative;
+	top: 7rem;
+	left: 9vw;
+}
+.contact a {
+	color: #bededb;
+	text-decoration: none;
+	font-style: italic;
+}
+@keyframes animatievierkant {
+	0% {
+		opacity: 0;}
+	100% {
+		transform: translate(0,-20rem);
+		transform: scale(2);
+		opacity: 100;}
+	}
+	@keyframes animatiethink {
+		0% {
+			opacity: 0;}
+		100% {
+			opacity: 100;}
+		}
+		@keyframes animatieoutside {
+			0% {
+				opacity: 0;}
+			100% {
+				opacity: 100;}
+			}
+			@keyframes animatiethe {
+				0% {
+					opacity: 0;}
+				100% {
+					opacity: 100;}
+				}
+				@keyframes animatiebox {
+					0% {
+						opacity: 0;}
+					100% {
+						opacity: 100;}
+					}
+.contacthtml {
+	background:
+linear-gradient(135deg, #d8cdc4 21px, white 22px, white 24px, transparent 24px, transparent 67px, white 67px, white 69px, transparent 69px),
+linear-gradient(225deg, #d8cdc4 21px, white 22px, white 24px, transparent 24px, transparent 67px, white 67px, white 69px, transparent 69px)0 64px;
+background-color:#d8cdc4;
+background-size: 64px 128px;
+}
+
+.abouthtml {
+	background-image: linear-gradient(to right, #d8cdc4, white);
+}
+
+@supports (grid-area: auto) {
+		body {
+			max-width: none;
+		}
+
+
+	@media (min-width: 700px) {
+		.main {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 0.5fr 1fr;
+		}
+		.main img {
+			position: relative;
+			top: 5rem;
+			left: 5rem;
+			border: 1rem solid white;
+		}
+		#seizoen {
+			grid-column: 1;
+			grid-row: 1;
+			width: 20vw;
+		}
+		#heineken {
+			grid-column: 2;
+			grid-row: 1;
+			width: 20vw;
+		}
+		#ballerina {
+			grid-column: 3;
+			grid-row: 1;
+			width: 20vw;
+		}
+		#vrouw {
+			grid-column: 1;
+			grid-row: 3;
+			width: 20vw;
+		}
+		#naam {
+			grid-column: 2;
+			grid-row: 3;
+			width: 20vw;
+		}
+		#giraf {
+			grid-column: 3;
+			grid-row: 3;
+			width: 20vw;
+		}
+
+	}
